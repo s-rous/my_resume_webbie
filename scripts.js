@@ -26,3 +26,26 @@ setTimeout(() => {
         welcomeSection.style.display = 'none';
     }, 1000); // Fading animation duration
 }, 5000); // Time to wait before fading out in milliseconds
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+// Event listener for mode switch toggle
+document.getElementById('mode-switch-toggle').addEventListener('change', function () {
+    toggleDarkMode();
+});
+
+// Check local storage for dark mode preference
+if (localStorage.getItem('darkMode') === 'true') {
+    toggleDarkMode();
+}
+
+// Store dark mode preference in local storage
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('mode-switch-toggle').addEventListener('change', function () {
+        localStorage.setItem('darkMode', this.checked);
+    });
+});

@@ -10,6 +10,16 @@ body {
     background-color: #f5f7fa;
     /* Light grayish blue background */
     line-height: 1.6;
+    transition: background-color 0.3s ease-in-out;
+    color: #24324a;
+    /* Default text color */
+}
+
+body.dark-mode {
+    background-color: #1a202c;
+    /* Dark mode background */
+    color: #fff;
+    /* White text color */
 }
 
 header {
@@ -137,4 +147,81 @@ footer {
     visibility: visible;
     bottom: 0;
     /* Move tooltip to fill button container */
+}
+
+/* Dark mode specific styles */
+body.dark-mode header,
+body.dark-mode nav ul li a,
+body.dark-mode footer {
+    color: #fff;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ff6347;
+    /* Coral color on hover */
+}
+
+body.dark-mode main {
+    background-color: #2d3748;
+    /* Dark mode main background */
+}
+
+body.dark-mode .skill {
+    background-color: #2d3748;
+    /* Dark mode skill background */
+}
+
+body.dark-mode .progress-bar {
+    background-color: #4a5568;
+    /* Dark mode progress bar background */
+}
+
+body.dark-mode .tooltip {
+    background-color: #718096;
+    /* Dark mode tooltip background */
+    color: #fff;
+}
+
+/* Switch styles */
+.switch-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.switch::before {
+    transform: translateX(20px) translateY(-50%);
+}
+
+input[type="checkbox"]:checked+.switch {
+    background-color: #3ea6ff;
 }
