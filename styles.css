@@ -240,3 +240,50 @@ body.dark-mode .switch {
 body.dark-mode .switch::before {
     background-color: #f0f0f0;
 }
+
+/* Job Listing Slider Styles */
+.job-slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.job-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.job-slide {
+    flex: 0 0 100%;
+    /* Change this line */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Slider Dots Styles */
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #28a745;
+    /* Active dot color */
+}
