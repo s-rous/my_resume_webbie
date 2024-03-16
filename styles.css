@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6347;
+    color: #28a745;
     /* Coral color on hover */
 }
 
@@ -157,7 +157,7 @@ body.dark-mode footer {
 }
 
 body.dark-mode nav ul li a:hover {
-    color: #ff6347;
+    color: #28a745;
     /* Coral color on hover */
 }
 
@@ -223,5 +223,20 @@ input[type="checkbox"]:checked+.switch::before {
 }
 
 input[type="checkbox"]:checked+.switch {
-    background-color: #3ea6ff;
+    background-color: #f0f0f0;
+}
+
+/* Light mode slider color */
+.switch::before {
+    background-color: #24324a;
+}
+
+/* Dark mode slider background */
+body.dark-mode .switch {
+    background-color: #1a202c;
+}
+
+/* Dark mode slider color */
+body.dark-mode .switch::before {
+    background-color: #f0f0f0;
 }
