@@ -17,3 +17,12 @@ document.querySelectorAll('.skill').forEach(skill => {
     tooltip.textContent = tooltipText;
     skill.appendChild(tooltip);
 });
+
+// Fade out the welcome section after 5 seconds
+setTimeout(() => {
+    const welcomeSection = document.getElementById('index');
+    welcomeSection.classList.add('animate__fadeOut');
+    setTimeout(() => {
+        welcomeSection.style.display = 'none';
+    }, 1000); // Fading animation duration
+}, 5000); // Time to wait before fading out in milliseconds

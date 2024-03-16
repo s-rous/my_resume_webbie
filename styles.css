@@ -7,12 +7,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f5f7fa;
+    /* Light grayish blue background */
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #24324a;
+    /* Dark blue header */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -29,14 +31,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;
+    color: #24324a;
+    /* Dark blue links */
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #f00;
-    /* Change color on hover */
+    color: #ff6347;
+    /* Coral color on hover */
 }
 
 main {
@@ -51,7 +54,8 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #24324a;
+    /* Dark blue footer */
     color: #fff;
 }
 
@@ -66,7 +70,7 @@ footer {
 .skill {
     position: relative;
     /* Positioning for tooltip */
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -96,22 +100,26 @@ footer {
 
 /* Define color ranges for different progress levels */
 .progress-bar .progress.red {
-    background-color: #f00;
+    background-color: #ff6347;
+    /* Coral progress bar */
 }
 
 .progress-bar .progress.yellow {
-    background-color: #ff0;
+    background-color: #ffc107;
+    /* Yellow progress bar */
 }
 
 .progress-bar .progress.green {
-    background-color: #0f0;
+    background-color: #28a745;
+    /* Green progress bar */
 }
 
 /* Tooltip styles */
 .tooltip {
     visibility: hidden;
     position: absolute;
-    background-color: #333;
+    background-color: #24324a;
+    /* Dark blue tooltip background */
     color: #fff;
     border-radius: 5px;
     padding: 5px;
