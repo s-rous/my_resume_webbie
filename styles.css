@@ -87,10 +87,24 @@ footer {
     border-radius: 0 0 5px 5px;
 }
 
-.progress {
+/* Adjust progress bar color based on progress percentage */
+.progress-bar .progress {
     height: 100%;
+    border-radius: 0 0 5px 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Define color ranges for different progress levels */
+.progress-bar .progress.red {
     background-color: #f00;
-    /* Change color as needed */
+}
+
+.progress-bar .progress.yellow {
+    background-color: #ff0;
+}
+
+.progress-bar .progress.green {
+    background-color: #0f0;
 }
 
 /* Tooltip styles */
