@@ -263,6 +263,8 @@ body.dark-mode .switch::before {
     /* Change this line */
     padding: 20px;
     box-sizing: border-box;
+    margin-top: -20px;
+
 }
 
 /* Slider Dots Styles */
@@ -286,4 +288,15 @@ body.dark-mode .switch::before {
 .slider-dot.active {
     background-color: #28a745;
     /* Active dot color */
+}
+
+#experience h2 {
+    margin-bottom: -15px;
+    /* Adjust the value as needed */
+}
+
+/* Add white space below each section */
+section {
+    margin-bottom: 25px;
+    /* Adjust the value as needed */
 }
